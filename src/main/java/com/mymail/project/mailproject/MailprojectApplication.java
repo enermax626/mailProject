@@ -1,0 +1,13 @@
+package com.mymail.project.mailproject;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MailprojectApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MailprojectApplication.class, args);
+    }
+
+}
