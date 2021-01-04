@@ -10,9 +10,9 @@ import java.util.List;
 @Repository
 public interface MailRepository extends JpaRepository<MailEntity, MailPK> {
 
-    public MailEntity save(MailPK mailpk);
+    MailEntity save(MailEntity mail);
 
-    public List<MailEntity> get(String to);
+    List<MailEntity> findAllByIdMailTo(String mailTo);
 
-    public List<MailEntity> get(String to, String from);
+    List<MailEntity> findAllByIdMailToAndIdMailFrom(String mailTo, String mailFrom);
 }

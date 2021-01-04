@@ -15,8 +15,8 @@ import java.util.Date;
 @AllArgsConstructor
 @Embeddable
 public class MailPK implements Serializable {
-    private String to;
-    private String from;
+    private String mailTo;
+    private String mailFrom;
     private Date timestamp;
     private String id;
 

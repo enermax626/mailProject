@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>E-mail sent</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>E-mail has been sent</h1>
+<p th:text="'Destination: ' + ${mailResponseDto.mailTo}" />
+<p th:text="'Message: ' + ${mailResponseDto.body}" />
+<a href="/interface/home">Submit another message</a>
+</body>
+</html>

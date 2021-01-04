@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@IdClass(MailPK.class)
 @NoArgsConstructor
 @AllArgsConstructor
 public class MailEntity {
